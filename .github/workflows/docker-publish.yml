@@ -25,7 +25,9 @@ env:
 jobs:
   integration: 
 
-    uses: EmadDawoud/CICD-Actions-CH03-challenge-P1/.github/workflows/ci.yaml@main
+    # You can just reference the main branch if you want but since we added release we will use that
+    #uses: EmadDawoud/CICD-Actions-CH03-challenge-P1/.github/workflows/ci.yaml@main
+    uses: EmadDawoud/CICD-Actions-CH03-challenge-P1/.github/workflows/ci.yaml@v1.0.0
     permissions:
       contents: read
       checks: write
