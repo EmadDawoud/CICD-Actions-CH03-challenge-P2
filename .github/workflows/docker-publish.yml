@@ -28,7 +28,7 @@ jobs:
     uses: EmadDawoud/CICD-Actions-CH03-challenge-P1/.github/workflows/ci.yaml@main
     permissions:
       contents: read
-      #checks: write
+      checks: write
   build:
     needs: [integration]
     runs-on: ubuntu-latest
